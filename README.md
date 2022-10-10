@@ -2,7 +2,7 @@
 
 ## Usages
 
-*Terminal 1*
+#### Terminal 1
 
 ```
 npm i
@@ -11,7 +11,7 @@ npm i
 npm start
 ```
 
-* Terminal 2*
+#### Terminal 2
 
 ```
 pipenv install
