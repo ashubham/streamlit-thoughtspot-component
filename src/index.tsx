@@ -1,19 +1,15 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import ThoughtspotComponent from "./ThoughtspotComponent"
-import {
-  SearchEmbed,
-  AuthType,
-  init,
-  prefetch,
-  EmbedEvent,
-  HostEvent
-}
-from '@thoughtspot/visual-embed-sdk';
+import { StreamlitProvider } from "streamlit-component-lib-react-hooks"
+import { ThoughtspotComponent } from "./ThoughtspotComponent"
+
+console.log("testing")
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThoughtspotComponent />
+    <StreamlitProvider>
+      <ThoughtspotComponent />
+    </StreamlitProvider>
   </React.StrictMode>,
   document.getElementById("root")
 )
