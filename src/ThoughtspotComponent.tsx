@@ -28,7 +28,7 @@ interface State {
 
 
  function ThoughtspotComponent({args}: ComponentProps): ReactElement {
-
+  Streamlit.setFrameHeight(600)
   init({
     thoughtSpotHost: "https://se-thoughtspot-cloud.thoughtspot.cloud/#",
     authType: AuthType.None,
@@ -44,7 +44,7 @@ interface State {
       element.style.background = "#cccccc";
     })
     return (
-      <div style={{width:'600px',height:'600px'}} id="ts-embed">
+      <div style={{width:'600px',height:'600px',background:'#cccccc'}} id="ts-embed">
         TS Embed
       </div>  
     )
